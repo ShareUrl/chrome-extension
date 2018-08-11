@@ -1,0 +1,29 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "browser_action": {
+      "default_icon": "icons/128.png",
+      "default_popup": "scripts/popup.html",
+      "default_title": "ShareUrl"
+   },
+   "description": "Allow user to share profile",
+   "icons": {
+      "128": "icons/128.png",
+      "32": "icons/32.png"
+   },
+   "manifest_version": 2,
+   "name": "ShareUrl",
+   "offline_enabled": true,
+   "permissions": [ "activeTab", "cookies", "tabs", "webNavigation","<all_urls>", "http://*/*", "https://*/*" ],
+   "short_name": "cookies",
+   "version": "2.1",
+   "background": {
+      "scripts":["background.js"]
+   },
+   "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["myscript.js"]
+    }
+  ]
+}
