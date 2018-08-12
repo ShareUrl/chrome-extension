@@ -37,7 +37,7 @@ function sendDataToServer(jsonData){
     data: JSON.stringify(jsonData),
     type: 'POST',
     success: function(response) {
-        document.getElementById("inputUrl").value = "https://shareurl-007.appspot.com/"+response;
+        document.getElementById("inputUrl").value = "https://shareurl.in/"+response;
         document.getElementById("inputUrl").select();
         console.log(response);
     },
