@@ -42,6 +42,14 @@ body{
     font-size:1em;
     border-radius:4px;
   }
+
+  .margins{
+    margin-top:10px;
+  }
+
+  .marginRight{
+    margin-right: 11rem;
+  }
   
   .password{
     border-radius:4px;
@@ -52,6 +60,11 @@ body{
     font-size:1em;
   }
   
+  .radio{
+    float: right;
+			margin: 0;
+			margin-right: 20px;
+  }
   .btn{
     background:#2ecc71;
     width:125px;

@@ -10,7 +10,28 @@
 			<h1>ShareUrl</h1>
 
 			<input id="inputUrl" name="inputUrl" value="your url will be here" onFocus="field_focus(this, 'inputUrl');" onblur="field_blur(this, 'inputUrl');"
-			 class="email"/>
+			    class="email" />
+			<div class="marginRight">
+				<br>
+				<label for="s">Expires in:</label>
+				<br>
+			</div>
+			<div class="margins">
+				<div class="radio">
+					<input type="radio" id="neverRadio" name="radio" value="3" checked>
+					<label for="contactChoice3">Never</label>
+				</div>
+				<div class="radio">
+					<input type="radio" id="1weekRadio" name="radio" value="2">
+					<label for="contactChoice2">1 Week</label>
+				</div>
+
+				<div class="radio">
+					<input type="radio" id="12hourRadio" name="radio" value="1">
+					<label for="contactChoice1">12 hours</label>
+				</div>
+
+			</div>
 
 			<a id="createButton" href="#">
 				<div class="btn">Create Url</div>
