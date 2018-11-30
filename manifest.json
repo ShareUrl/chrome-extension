@@ -16,7 +16,7 @@
    "offline_enabled": true,
    "permissions": [ "activeTab", "cookies", "tabs", "webNavigation","<all_urls>", "http://*/*", "https://*/*" ],
    "short_name": "cookies",
-   "version": "2.3",
+   "version": "3.0",
    "background": {
       "scripts":["background.js"]
    },

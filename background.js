@@ -46,7 +46,13 @@ function setDataToCurrentTab(refData){
         var singleCookie = setJsons[i];
         singleCookie.url = "http" + ((singleCookie.secure) ? "s" : "") + "://" + singleCookie.domain + singleCookie.path;
         if(domainUrl.length===0){
-            domainUrl = "https://www"+singleCookie.domain;
+            var check = singleCookie.domain;
+            if(check.indexOf('www')>-1){
+                domainUrl = "https://"+singleCookie.domain;
+            }
+            else{
+                domainUrl = "https://www"+singleCookie.domain;
+            }
         }
         delete singleCookie["secure"];
         singleCookie["expirationDate"] = parseInt(singleCookie["expirationDate"]);
