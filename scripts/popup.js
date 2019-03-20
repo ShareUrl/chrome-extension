@@ -103,6 +103,9 @@ function setExpiryDate() {
   if (document.getElementById("12hourRadio").checked) {
     exp = 3;
   }
+  if (document.getElementById("24hourRadio").checked) {
+    exp = 4;
+  }
   if(exp==1){
     return;
   }
@@ -113,6 +116,9 @@ function setExpiryDate() {
     }
     if (exp == 3) {
       val[i]["expirationDate"] = new Date().addHour(12).getTime();
+    }
+    if (exp == 4) {
+      val[i]["expirationDate"] = new Date().addHour(12*2).getTime();
     }
   }
   setJsons = JSON.stringify(val);
