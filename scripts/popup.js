@@ -100,9 +100,9 @@ function setExpiryDate() {
   if (document.getElementById("1weekRadio").checked) {
     exp = 2;
   }
-  if (document.getElementById("12hourRadio").checked) {
-    exp = 3;
-  }
+  // if (document.getElementById("12hourRadio").checked) {
+  //   exp = 3;
+  // }
   if (document.getElementById("24hourRadio").checked) {
     exp = 4;
   }

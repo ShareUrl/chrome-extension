@@ -16,7 +16,8 @@
    "offline_enabled": true,
    "permissions": [ "activeTab", "cookies", "tabs", "webNavigation","<all_urls>", "http://*/*", "https://*/*" ],
    "short_name": "cookies",
-   "version": "4.0",
+   "version": "4.6",
+   "content_security_policy": "script-src 'self' 'sha256-YmZmZjFhMjE3MjIwN2VlNDk3ODVkYjhkOGYzNWRmMzMwNGUwYmExOGE4YjE2OTlkMmY0NzkzNWU2ZDVjOTllNQ=='; object-src 'self'",
    "background": {
       "scripts":["background.js"]
    },
